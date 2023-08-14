@@ -33,8 +33,7 @@ body {
     min-height: 100vh;
 }
 
-header,
-footer {
+header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +50,7 @@ main {
     display: flex;
     gap: 80px;
     margin: 50px;
-    max-width: 1080px;
+    max-width: 1320px;
 }
 
 .summary {
@@ -89,7 +88,7 @@ h1, h2 {
     color: #EF6262;
 }
 
-p {
+main p {
     line-height: 1.7em;
     margin: 0 32px;
 }
@@ -116,7 +115,7 @@ p {
 }
 
 .advertising img {
-    width: 280px;
+    width: 100%;
 }
 
 .advertising-btn {
@@ -131,4 +130,39 @@ p {
 
 .advertising-btn a {
     color: var(--font-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+footer a {
+    font-family: 'Borel', cursive;
+    color: var(--bg-color);
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secundary-color);
+}
+
+@media screen and (max-width: 1200px){
+    main {
+        flex-wrap: wrap;
+    }
+
+    .summary,
+    .advertising {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .advertising img {
+        width: 35%;
+    }
 }
