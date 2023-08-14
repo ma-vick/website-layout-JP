@@ -46,6 +46,32 @@ header img {
     width: 50px;
 }
 
+.nav-bar {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.nav-bar ul {
+    display: flex;
+    padding: 18px 40px 20px;
+    gap: 64px;
+}
+
+.nav-bar ul li {
+    cursor: pointer;
+    font-family: 'Borel', cursive;
+    color: var(--font-color);
+    background-color: var(--secundary-color);
+    padding: 8px 12px 1px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.nav-bar ul li:hover {
+    background-color: var(--font-color);
+    color: var(--secundary-color);
+}
+
 main {
     display: flex;
     gap: 80px;
@@ -61,10 +87,15 @@ main {
     color: var(--font-color);
     font-weight: bold;
     text-decoration: underline;
+    transition: 0.3s ease;
 }
 
 .summary li {
     margin: 18px 0;
+}
+
+.summary a:hover {
+    color: var(--primary-color);
 }
 
 article {
@@ -75,11 +106,11 @@ article {
     border-radius: 12px;
 }
 
-.couple {
+main img {
     align-self: center;
     border-radius: 8px;
     margin-bottom: 50px;
-    width: 510px;
+    width: 85%;
 }
 
 h1, h2 {
